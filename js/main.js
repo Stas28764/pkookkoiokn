@@ -1,0 +1,31 @@
+let score = 100099999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+
+let money = 0;
+
+
+const button = document.getElementById('button')
+const hamster = document.getElementById('hamster');
+
+const scoredispay = document.getElementById('score');
+const moneydispay = document.getElementById('money');
+
+hamster.addEventListener('click' , () => {
+    score++;
+
+    scoredispay.textContent = `норм : ${score}`;
+   
+});
+
+
+button.addEventListener('click', () =>  {
+console.log('jgtyufgyfyh')
+   
+if(score >=100){
+money=money+100;
+score=score-100;
+
+moneydispay.textContent = `Счет рублей ${score}`;
+scoredispay.textContent = `Мои деньги: ${money}`
+ }
+
+});
